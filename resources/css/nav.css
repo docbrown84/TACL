@@ -1,0 +1,62 @@
+.navbar {
+  margin-bottom: 0px;
+}
+
+.navbar-default{
+  position: relative;
+  width:inherit;
+  background: linear-gradient(to top, #000000 30%, #606060 90%);
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+.navbar-inverse {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  position: relative;
+  width:auto;
+  background: linear-gradient(to top, #000000 30%, #606060 90%);
+}
+
+.navbar-admin{
+  width: 200px;
+  background-color: #b4b4b4;
+  color: #000000;
+}
+
+.admin-navbar-title{
+  float:left;
+  height: 50px;
+  width: 200px;
+  color: #ffffff;
+  background-color: #8000FF;
+  margin-left: -1px;
+  margin-top: -1px;
+  margin-bottom: 0px;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.admin-navbar-title:hover{
+  color: #ffffff;
+}
+
+.admin-navbar-left{
+  margin-left: -1px;
+  color: #000000;
+  width: 200px;
+}
+
+.admin-navbar-left:hover{
+  color: #000000;
+}
+
+.admin-navbar-left:active{
+  background-color: inherit;
+}

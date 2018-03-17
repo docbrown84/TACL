@@ -1,0 +1,30 @@
+html {
+    height: 100%;
+}
+head {
+  background-color: #000000;
+}
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: linear-gradient(to top, #000000 30%, #606060 90%);
+}
+img.banner {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  position: relative;
+}
+div.container {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 65%;
+}
+
+div.content{
+  background-color: #ffffff;
+}
