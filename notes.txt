@@ -1,0 +1,3 @@
+//The below XHR call will result in an error in Chrome unless running chrome
+//  as a live server using 'live-server' command (which is installed with
+//  this -> 'sudo npm install -g live-server') in the terminal from the directory of the Angular app

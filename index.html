@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="taclApp">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TACL</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/global.css">
+  <link rel="stylesheet" href="/assets/css/nav.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body ng-controller="mainCtrl as vm" class="body">
+  <div class="container">
+    <img src="/assets/img/TAP_banner_desktop.jpg" class="banner" alt="">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" name="navButton">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a ui-sref="home">Home</a></li>
+            <li><a ui-sref="sessions">Sessions</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Transition Documents<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a ui-sref="doc1">EForm Dashboard</a></li>
+                <li><a ui-sref="doc2">Create New Eform</a></li>
+                <li><a ui-sref="doc3">EForm FAQs</a></li>
+              </ul>
+            </li>
+            <li><a ui-sref="vmet">VMET</a></li>
+            <li><a ui-sref="reports">Reports</a></li>
+            <li><a ui-sref="personSearch">Person Search</a></li>
+            <li><a ui-sref="admin">Admin</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <ui-view></ui-view>
+
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js" charset="utf-8"></script>
+  <!-- Added below script source for Tutorial 8 - Routing -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js" charset="utf-8"></script>
+  <script src="app.js" charset="utf-8"></script>
+  <script src="/components/posts-list/posts-list.component.js" charset="utf-8"></script>
+  <script src="/components/admin/admin.component.js" charset="utf-8"></script>
+  <script src="/components/admin/manageNews.component.js" charset="utf-8"></script>
+</body>
+
+</html>
